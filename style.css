@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    width: 1440px;
+    height: auto;
+    
+}
+
+header {
+    
+}
+
+
+
+/*-------------------CONTAINER FOR THE LOGO, MOTTO, PHONE NUMBER, LINKS-------------*/
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    border: 1px solid black;
+    height: 200px
+}
+
+.logo {
+    width: 500px;
+    border: 1px solid black;
+    background-color: red;
+    grid-column: 2 / 7;
+}
+
+.navigation {
+    grid-column-start: 7;
+    grid-column-end: 12;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+}
+
+.call {
+    width: 550px;
+    display: block;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.navbar {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end
+}
+
+.navbar ul li  {
+    background-color: gray;
+    width: auto;
+    display: inline-block;
+    //justify-content: flex-end;
+       
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    border: 1px solid white;
+    //justify-content: flex-end
+}
+
+.motto {
+    display: grid;
+    height: auto;
+    background-color: blue;
+    grid-column: 2 / 6;
+    grid-row: 2 / 2;
+    justify-content: center
+}
+
+/*-----------------BILLBOARD AREA-------------*/
+
+
+.nav-container {
+    display: grid;
+    background-color: gray;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.nav-container p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.nav1 {
+    background-color: #db9f9f;
+    width: auto;
+    height: auto;
+    border: 1px solid white;
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+    align-content: center;
+}
+
+.nav2 {
+    background-color: #db9f9f;
+    width: auto;
+    height: auto;
+    grid-column: 5 / 9;
+    grid-row: 1 / 5;
+    border: 1px solid white;
+}
+
+/*------------------TROUBLE STYLING THIS DIV TO MATCH THE OTHER 2 DIVS ABOVE---------*/
+.nav3 {
+    background-color: #db9f9f;
+    width: auto;
+    border: 1px solid white;
+    grid-column: 9 / -1;
+
+}
+
