@@ -6,7 +6,7 @@
 
 body {
     margin: auto;
-    width: 1440px;
+    width: 100%;
     height: auto;
     
 }
@@ -98,8 +98,7 @@ header {
 }
 
 .nav-container p {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 25px;
 }
 
 .nav1 {
@@ -108,7 +107,7 @@ header {
     height: auto;
     border: 1px solid white;
     grid-column: 1 / 5;
-    grid-row: 1 / 5;
+    grid-row: 1 / 8;
     align-content: center;
 }
 
@@ -117,7 +116,7 @@ header {
     width: auto;
     height: auto;
     grid-column: 5 / 9;
-    grid-row: 1 / 5;
+    grid-row: 1 / 8;
     border: 1px solid white;
 }
 
@@ -127,6 +126,6 @@ header {
     width: auto;
     border: 1px solid white;
     grid-column: 9 / -1;
-
+    grid-row: 1 / 8;
 }
 
