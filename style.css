@@ -1,3 +1,29 @@
+@media only screen and (max-width: 1100px) {
+    .logo-number {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .services-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .service {
+        margin: 0 50px 0 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+  }
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,127 +31,406 @@
 }
 
 body {
-    margin: auto;
     width: 100%;
-    height: auto;
-    
+    font-family: 'Comfortaa';
 }
 
-header {
-    
+/* ------- CONTAINER FOR THE ENTIRE SITE ------- */
+.container {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    position: relative;
+    border-top: 20px solid  rgb(0, 81, 146);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left: 2px solid  rgb(0, 81, 146);
+    border-right: 2px solid  rgb(0, 81, 146);
 }
 
+/* ------- CONTAINER FOR LOGO, MOTTO, NUMBER, NAVBAR ------- */
 
+.header {
+    width: 100%;
+    padding-bottom: 30px;
+    position: relative;
+}
 
-/*-------------------CONTAINER FOR THE LOGO, MOTTO, PHONE NUMBER, LINKS-------------*/
-.header-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    border: 1px solid black;
-    height: 200px
+/* ------- CONTAINER FOR LOGO AND NUMBER ------- */
+.logo-number {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
 }
 
 .logo {
-    width: 500px;
-    border: 1px solid black;
-    background-color: red;
-    grid-column: 2 / 7;
+    width: 350px;
+    min-width: 350px;
+    height: 100px;
+    margin-right: 80px;
+    border: 2px solid white;
+    text-align: center;
+    position: relative;
+    
 }
 
-.navigation {
-    grid-column-start: 7;
-    grid-column-end: 12;
+.logo img {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.number {
     display: flex;
     flex-direction: column;
-    width: auto;
-    height: auto;
-    background-color: yellow;
-    justify-content: center;
-    align-items: center;
+    margin-left: -80px;
+    position: relative;
+    /* justify-items: flex-end;
+    align-items: flex-end; */
+    justify-content: flex-end;
 }
 
-.call {
-    width: 550px;
-    display: block;
-    justify-content: flex-start;
-    align-items: flex-start;
+.number h1 {
+    color: rgb(0, 81, 146);
+    letter-spacing: 3px;
 }
 
-.navbar {
-    width: 600px;
-    height: 100px;
+.number span {
+    color: rgba(238, 31, 37);
+    text-shadow: -1px 0 rgb(0, 81, 146), 0 1px rgb(0, 81, 146), 1px 0 rgb(0, 81, 146), 0 -1px rgb(0, 81, 146);
+}
+
+
+
+.number h2 {
+    color: #111; font-family: 'Comfortaa', sans-serif; font-size: 30px; font-weight: bold; letter-spacing: 1px; line-height: 1;
+    align-items: flex-end;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* ------- CONTAINER FOR MOTTO AND NAVBAR ------- */
+.motto-nav {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: flex-end
 }
 
-.navbar ul li  {
-    background-color: gray;
-    width: auto;
-    display: inline-block;
-    //justify-content: flex-end;
-       
+
+.nav {
+    display: flex;
+    align-items: flex-end;
 }
 
-.navbar ul li a {
-    text-decoration: none;
-    border: 1px solid white;
-    //justify-content: flex-end
+.nav ul {
+    list-style-type: none;
+   
 }
 
-.motto {
-    display: grid;
-    height: auto;
-    background-color: blue;
-    grid-column: 2 / 6;
-    grid-row: 2 / 2;
-    justify-content: center
+/* ------- CODE FOR THE NAV BAR ------- */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu {
+  width: auto;
+  border-bottom: 3px solid rgb(0, 81, 146);
+  font-family: Raleway, sans-serif;
+  line-height: 1;
+  display: flex;
+  align-items: flex-end;
+}
+#cssmenu ul {
+  background: #ffffff;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right > ul > li > a {
+  margin-right: 0;
+  margin-left: -4px;
+}
+#cssmenu > ul > li > a {
+  z-index: 2;
+  padding: 18px 25px 12px 25px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #444444;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-right: -4px;
+}
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+  color: #ffffff;
+}
+#cssmenu > ul > li > a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 120%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(5px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(5px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(5px) rotateX(2deg);
+  transform-origin: bottom;
+}
+#cssmenu > ul > li.active > a:after,
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li > a:hover:after {
+  background: rgb(0, 81, 146);
 }
 
-/*-----------------BILLBOARD AREA-------------*/
 
 
-.nav-container {
-    display: grid;
-    background-color: gray;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    margin: auto;
+
+/* ------- CONTAINER FOR THE 3 SERVICES DIVS ------- */
+.services-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    display: flex;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+
+.about-container-copy p::first-letter {
+    font-size: 350%;
+    color: red;
+}
+
+.about-container img {
+    border-radius: 50%;
+}
+
+.headshot {
+    padding: 20px 40px;
+}
+
+.about-container-copy {
+    padding: 20px 40px;
+}
+
+
+.service {
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+}
+
+.service div {
+    background-color: rgb(0, 81, 146);
+    color: #fff;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 0 5px 0;
+    text-shadow: 2px 5px 10px rgba(238, 31, 37);
+}
+
+#bookkeep {
+    color: #fff;
+    background-color: rgb(0, 81, 146);
+    height: 80px;
+    line-height: 70px;
+}
+
+
+
+.service p {
+    padding: 10px 10px 10px 10px;
+    color: #2a2a2a;
+    text-align: justify;
+    letter-spacing: .75px;
+}
+
+
+
+/* ------- CONTACT AND MAP CONTAINER ------- */
+.contact-container {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.contact-container ul {
+    list-style: none;
+}
+
+.testimonial-container {
     width: 100%;
-    height: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
 }
 
-.nav-container p {
-    padding: 25px;
-}
+/* .testimonial-container h1 {
+    padding: 5px;
+    text-align: center;
+} */
 
-.nav1 {
-    background-color: #db9f9f;
-    width: auto;
-    height: auto;
+/* .testimonial-container h2 {
+    color: #fff;
+    text-align: center;
+} */
+
+.test1 {
+    width: 350px;
+    height: 300px;
     border: 1px solid white;
-    grid-column: 1 / 5;
-    grid-row: 1 / 8;
-    align-content: center;
+    border-radius: 20px;
 }
 
-.nav2 {
-    background-color: #db9f9f;
-    width: auto;
-    height: auto;
-    grid-column: 5 / 9;
-    grid-row: 1 / 8;
+.test1 p {
+    margin-top: 10px;
+    height: 200px;
+    border-left: 2px solid rgba(238, 31, 37);
+    border-right: 2px solid rgba(238, 31, 37);
+    border-bottom: 10px solid rgba(238, 31, 37);
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+.test2 {
+    width: 350px;
+    height: 300px;
     border: 1px solid white;
+    border-radius: 20px;
 }
 
-/*------------------TROUBLE STYLING THIS DIV TO MATCH THE OTHER 2 DIVS ABOVE---------*/
-.nav3 {
-    background-color: #db9f9f;
-    width: auto;
+.test2 p {
+    margin-top: 10px;
+    height: 200px;
+    border-left: 2px solid rgba(238, 31, 37);
+    border-right: 2px solid rgba(238, 31, 37);
+    border-bottom: 10px solid rgba(238, 31, 37);
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+.test3{
+    width: 350px;
+    height: 300px;
     border: 1px solid white;
-    grid-column: 9 / -1;
-    grid-row: 1 / 8;
+    border-radius: 20px;
 }
 
+.test3 p {
+    margin-top: 10px;
+    height: 200px;
+    border-left: 2px solid rgba(238, 31, 37);
+    border-right: 2px solid rgba(238, 31, 37);
+    border-bottom: 10px solid rgba(238, 31, 37);
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+.test-top {
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.test-top {
+    background-color: rgb(0, 81, 146);
+    color: #fff;
+}
+
+
+.footer {
+    display: flex;
+    width: 100%;
+    padding: 20px 40px;
+    justify-content: space-around;
+}
+
+.left-foot {
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.addy-container {
+
+}
+
+.newsletter {
+
+}
+
+.copyright {
+
+}
+
+.right-foot {
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-contact {
+
+}
+
+.foot-social-media {
+
+}
+
+#icon {
+    font-size: 60px;
+}
