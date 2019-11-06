@@ -8,6 +8,7 @@
         display: flex;
         flex-wrap: wrap;
     }
+
     .service {
         margin: 0 70px 0 70px;
         margin-top: 20px;
@@ -44,16 +45,14 @@
 
     .footer {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
-  }
-
-/* SMALL TABLET TO BIG TABLET FROM 767 TO 1023PX */ 
-@media only screen and (max-width: 1023px) {
-
 }
+
+/* SMALL TABLET TO BIG TABLET FROM 767 TO 1023PX */
+@media only screen and (max-width: 1023px) {}
 
 /* SMALL PHONES TO SMALL TABLETS FROM 480 TO 767PX */
 @media only screen and (max-width: 767px) {
@@ -71,6 +70,7 @@
     .logo-number {
         padding-left: 60px;
     }
+
     #cssmenu {
         display: none;
     }
